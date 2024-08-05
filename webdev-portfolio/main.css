@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'TTTogether';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#333;
+}
+body{
+  font-family: "Pretendard Variable", Pretendard;
+  color:#333;
+}
+
+main{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+section{
+  width:100%;
+  min-height: 1500px;
+}
+
+/* 헤더 영역 */
+header{
+  width:100%;
+  height: 400px;
+  background: url(./img/bg1.jpg) no-repeat center bottom;
+  background-size:cover;
+  background-position: 0px -1600px;
+}
+.head{
+  width: 100%;
+  height: 100%;
+  background: rgba(77, 52, 7, 0.4);
+}
+
+/* 상단 네비게이션 */
+.head nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 70px;
+  gap:50px;
+}
+
+.head nav ul li a {
+  font-size: 20px;
+  color:#fff;
+  font-weight: 400;
+}
+
+.head h1{
+  font-family: 'TTTogether';
+  font-weight: 400;
+  color:#fff;
+  text-align: center;
+  font-size:60px;
+  padding-top: 80px;
+  padding-bottom: 15px;
+}
+.head h2{
+  font-family: 'TTTogether';
+  font-weight: 400;
+  color:#fff;
+  text-align: center;
+  font-size:40px;
+}
+.head h3{
+  width: 50px;
+  margin: 15px auto 30px;
+  height: 3px;
+  background:#fb8500;
+  text-align: center;
+  font-size:40px;
+}
+.head p{
+  text-align: center;
+  color:#fff;
+  line-height: 26px;
+}
+
+
+#about-area{
+  width: 100%;
+  background:rgba(77, 52, 7, 0.1);
+}
+#about-area h1{
+  font-size:30px;
+  font-weight:400;
+  text-align: center;
+  padding: 30px 0;
+}
+#about-area h1::after{
+  content: "";
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  height: 3px;
+  background: #fb8500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 50px 0;
+}
+
+.my-photo{
+  width: 150px;
+  height: 150px;
+}
+.my-photo img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius:50%;
+  object-fit: cover;
+}
+
+
+.my-info table,.my-info  tr,.my-info  th, .my-info td{
+  padding: 5px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  font-size:20px;
+}
+.my-info th{
+  color:#444;
+  font-weight: 400;
+  font-size: 16px;
+}
+.my-info table{
+  margin: 0px auto;
+  text-align: left;
+}
+
+
+/* skills */
+#skills{
+  width:1300px;
+  margin: 50px auto;
+  border-bottom:1px solid #eee;
+  padding: 50px;
+}
+.skills-title{
+  width: 100%;
+  text-align: center;
+}
+.skills-title h1{
+  font-size:30px;
+  font-weight:400;
+}
+.skills-title h1::after{
+  content: "";
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  height: 3px;
+  background: #fb8500;
+  text-align: center;
+  margin-top: 10px;
+}
+.skills-list{
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.skills-list h1{
+  text-align: center;
+  margin: 0px 0 20px;
+  font-size:20px;
+}
+.skills-list ul{
+  margin: 0 auto;
+  padding: 50px;
+  align-items: center;
+  border:1px solid #eee;
+  border-radius:5px;
+}
+.skills-list ul li{
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.skills-list ul li img{
+  width: 100px;
+  height: auto;
+}
+
+
+.front-skill ul li:nth-child(1) img{
+  width: 70px;
+}
+.front-skill ul li:nth-child(2) img{
+  width: 70px;
+}
+
+.etc-skill ul li:nth-child(1) img{
+  width: 70px;
+}
+.etc-skill ul li:nth-child(2) img{
+  width: 70px;
+}
+.etc-skill ul li:nth-child(3) img{
+  width: 70px;
+}
+
+
+/* project */
+.project-title{
+  width: 100%;
+  text-align: center;
+}
+.project-title h1{
+  font-size:30px;
+  font-weight:400;
+  margin: 0px 0 20px;
+}
+.project-title h1::after{
+  content: "";
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  height: 3px;
+  background: #fb8500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pj-box{
+  width: 1100px;
+  margin: 80px auto;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius:5px;
+  border:1px solid #eee;
+  border-top:3px solid rgb(251, 133, 0, 0.4);
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.pj-box:hover {
+  transform: translateY(-10px) !important;
+}
+
+.pj-img{
+  min-width: 400px;
+  max-width: 400px;
+  border:1px solid #eee;
+  border-radius:5px;
+  overflow: hidden;
+}
+.pj-img img{
+  width: 100%;
+  height: auto;
+}
+.pj-skill{
+  padding: 15px;
+  box-sizing: border-box;
+}
+.pj-skill h3{
+  padding: 15px 0 10px;
+  border-bottom: 1px solid #eee;
+}
+.pj-skill p{
+  line-height: 26px;
+  padding-top: 10px;
+}
+
+.pj-info{
+  padding: 20px;
+}
+.pj-info table, .pj-info tr, .pj-info th,
+.pj-info td{
+  border-spacing: 25px 20px;
+}
+.pj-info th{
+  width: 100px;
+  color:#666;
+  font-size:14px;
+  font-weight:400;
+  text-align: center;
+}
+.pj-info td{
+  color:#333;
+  font-size:16px;
+  line-height: 26px;
+}
+.pj-info td a:hover{
+  text-decoration: underline;
+}
+
+#pj-box1-detail,
+#pj-box2-detail {
+  display: none;
+  opacity: 0;
+  width: 800px;
+  min-height: 500px;
+  background: #fff;
+  border: 1px solid #eee;
+  position: fixed;
+  top: calc(40% - 250px);
+  left: calc(50% - 400px);
+  z-index: 9999;
+  padding: 20px;
+  box-shadow: 0px 3px 10px #ccc;
+  transition: opacity 0.5s ease;
+}
+
+#pj-box1-detail.show,
+#pj-box2-detail.show {
+  display: block;
+  opacity: 1;
+}
+
+#pj-box1-detail p,
+#pj-box2-detail p {
+  font-size: 30px;
+  cursor: pointer;
+  text-align: right;
+}
+
+
+/* top버튼 */
+#topBtn {
+  display: none; /* 초기에는 버튼을 숨김 */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: #333;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>포트폴리오 메인</title>
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <header>
+        <div class="head">
+          <nav>
+            <ul>
+              <li><a href="#about-area" data-scroll>about me</a></li>
+              <li><a href="#skills" data-scroll>skill</a></li>
+              <li><a href="#project" data-scroll>project</a></li>
+            </ul>
+          </nav>
+          <h1>김태준</h1>
+          <h2>웹 개발자 포트폴리오</h2>
+          <h3></h3>
+          <p>안녕하세요.<br>
+            웹개발자를 지원하는 신입 김태준입니다.<br>
+            “기술과 디자인 모두를 아우르는 웹 개발자로서, 실무 경험과 학습을 통해 빠르게 성장하는 신입 개발자입니다.”
+          </p>
+        </div>
+      </header>
+
+      <div id="about-area">
+        <h1>ABOUT ME</h1>
+        <div class="about-me">
+          <div class="my-photo">
+            <img src="./img/myPhoto3.jpg" alt="나의 사진">
+          </div>
+          <div class="my-info">
+            <table>
+              <tr>
+                <th>이름</th>
+                <td>김태준</td>
+                <th>생년월일</th>
+                <td>1994.01.03</td>
+              </tr>
+              <tr>
+                <th>전화번호</th>
+                <td>010-8471-2165</td>
+                <th>이메일</th>
+                <td>asxowns@naver.com</td>
+              </tr>
+              <tr>
+                <th>주소</th>
+                <td>부산시 중구 대청동</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills">
+        <div class="skills-title">
+          <h1 data-aos="fade-in">SKILLS</h1>
+        </div>
+        <div class="skills-list">
+          <div class="back-skill" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
+            <h1>Backend</h1>
+            <ul>
+              <li><img src="./img/java.png" alt=""></li>
+              <li><img src="./img/springboot.png" alt=""></li>
+              <li><img src="./img/mariadb.png" alt=""></li>
+              <li><img src="./img/mybatis.jpg" alt=""></li>
+            </ul>
+          </div>
+          <div class="front-skill" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="1000">
+            <h1>Frontend</h1>
+            <ul>
+              <li><img src="./img/html.jpg" alt=""></li>
+              <li><img src="./img/css.jpg" alt=""></li>
+              <li><img src="./img/js2.png" alt=""></li>
+              <li><img src="./img/jquery.png" alt=""></li>
+            </ul>
+          </div>
+          <div class="etc-skill" data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="1000">
+            <h1>etc</h1>
+            <ul>
+              <li><img src="./img/gitHub.png" alt=""></li>
+              <li><img src="./img/photoshop.png" alt=""></li>
+              <li><img src="./img/illustrator.png" alt=""></li>
+              <li><img src="./img/figma.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="project">
+        <div class="project-title">
+          <h1 data-aos="fade-in">PROJECT</h1>
+        </div>
+        <div class="pj-box pj-box1" data-aos="fade-in"
+        data-aos-duration="1500">
+          <div>
+            <div class="pj-img">
+              <img src="./img/jobhunter-main2.png">
+            </div>
+            <div class="pj-skill">
+              <h3>기술 스택</h3>
+              <p>SpringBoot, JSP, JPA, mariaDB, JavaScript, HTML, CSS, Figma</p>
+            </div>
+          </div>
+          <div class="pj-info">
+            <table>
+              <tr>
+                <th>프로젝트 주제</th>
+                <td>휴먼 클라우드 이력 관리 플랫폼 웹개발 (팀프로젝트 6인)</td>
+              </tr>
+              <tr>
+                <th>프로젝트 명</th>
+                <td>jobhunter</td>
+              </tr>
+              <tr>
+                <th>프로젝트 설명</th>
+                <td>잡코리아, 사람인 같은 구인구직 사이트들을 참고하여 플랫폼 웹개발을 하였습니다.</td>
+              </tr>
+              <tr>
+                <th>담당 작업</th>
+                <td>자유게시판, 기업게시판 CRUD를 담당했으며 댓글, 검색 기능도 추가하였습니다.
+                  그리고 전체적인 디자인과 CSS부분을 맡아서 하였습니다.
+                </td>
+              </tr>
+              <tr>
+                <th>소감</th>
+                <td>
+                  구인구직 사이트 개발 프로젝트를 통해 실제 비즈니스 요구사항을 기술적으로 구현하는 과정을 경험할 수 있었습니다. 스프링 프레임워크를 사용하여 견고하고 확장 가능한 백엔드 시스템을
+                  구축했으며, 이 과정에서 MVC 패턴의 실제 적용과 데이터베이스 설계의 중요성을 깊이 이해하게 되었습니다.
+                  이번 프로젝트를 통해 전체 웹 애플리케이션 개발 사이클을 경험할 수 있었고, 실제 사용자의 요구를 충족시키는 서비스를 개발하는 것의 중요성을 배웠습니다. 앞으로는 마이크로서비스
+                  아키텍처의 도입과 더 나은 사용자 경험을 위한 프론트엔드 기술 향상 등을 목표로 하고 있습니다. 이 경험은 제 개발자 경력에 있어 중요한 이정표가 되었으며, 앞으로의 프로젝트에 더욱
+                  자신감을 갖고 임할 수 있는 기반이 되었습니다.
+                </td>
+              </tr>
+              <tr>
+                <th>깃허브 주소</th>
+                <td><a href="https://github.com/asxowns/JobHunter.git"
+                    target="_blank">https://github.com/asxowns/JobHunter.git</a></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- pj-box1 -->
+
+        <div id="pj-box1-detail">
+          <p>X</p>
+        </div>
+
+        <div class="pj-box pj-box2" data-aos="fade-in"
+        data-aos-duration="1500">
+          <div>
+            <div class="pj-img">
+              <img src="./img/goodjob-main2.png">
+            </div>
+            <div class="pj-skill">
+              <h3>기술 스택</h3>
+              <p>SpringBoot, JSP, Mybatis, mariaDB, JavaScript, HTML, CSS, Figma</p>
+            </div>
+          </div>
+          <div class="pj-info">
+            <table>
+              <tr>
+                <th>프로젝트 주제</th>
+                <td>휴먼 클라우드 이력 관리 플랫폼 웹개발 - REST API (팀프로젝트 6인)</td>
+              </tr>
+              <tr>
+                <th>프로젝트 명</th>
+                <td>goodjob</td>
+              </tr>
+              <tr>
+                <th>프로젝트 설명</th>
+                <td>REST API를 이용하여 서버와 클라이언트를 나누어 구인구직 플랫폼 웹개발을 하였습니다.</td>
+              </tr>
+              <tr>
+                <th>담당 작업</th>
+                <td>구직자 이력서 등록, 이력서 상세페이지, 즉시지원 등 이력서 관련 기능을 담당하였고 전체적인 디자인과 CSS작업을 도맡아 진행하였습니다.
+                </td>
+              </tr>
+              <tr>
+                <th>소감</th>
+                <td>이번 프로젝트를 통해 마이크로서비스 아키텍쳐의 실제 구현을 경험해보았습니다. 서버를 두개 나누어 개발함으로써 각 서비스의 독립성과 확장성을 높일 수 있었지만 동시에 데이터 일관성
+                  유지와 서비스간 통신관리의 복잡성도 체감했습니다. REST API를 설계하고 구현하는 과정에서 효울적인 리소스 관리와 버전 관리의 중요성을 배웠습니다.</td>
+              </tr>
+              <tr>
+                <th>깃허브 주소</th>
+                <td><a href="https://github.com/quswldms137/goodjob22.git"
+                    target="_blank">https://github.com/quswldms137/goodjob22.git</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="pj-box2-detail">
+          <p>XXX</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <button id="topBtn" title="Go to top">Top</button>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+  <script>
+    AOS.init({
+      once: true,
+    });
+    $(window).on('load', function () {
+      AOS.refresh();
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 첫번째 프로젝트
+      const element = document.querySelector(".pj-box1");
+      const detail = document.getElementById("pj-box1-detail");
+      if (element && detail) {
+        element.addEventListener('click', () => {
+          detail.style.display = "block";
+          requestAnimationFrame(() => {
+            detail.style.opacity = 1;
+          });
+        });
+      }
+
+      // 첫번째 프로젝트 디테일 닫기
+      const close = document.querySelector("#pj-box1-detail p");
+      if (close && detail) {
+        close.addEventListener('click', () => {
+          detail.style.opacity = 0;
+          detail.addEventListener('transitionend', () => {
+            detail.style.display = "none";
+          }, { once: true });
+        });
+      }
+
+      // 두번째 프로젝트
+      const element2 = document.querySelector(".pj-box2");
+      const detail2 = document.getElementById("pj-box2-detail");
+      if (element2 && detail2) {
+        element2.addEventListener('click', () => {
+          detail2.style.display = "block";
+          requestAnimationFrame(() => {
+            detail2.style.opacity = 1;
+          });
+        });
+      }
+
+      // 두번째 프로젝트 디테일 닫기
+      const close2 = document.querySelector("#pj-box2-detail p");
+      if (close2 && detail2) {
+        close2.addEventListener('click', () => {
+          detail2.style.opacity = 0;
+          detail2.addEventListener('transitionend', () => {
+            detail2.style.display = "none";
+          }, { once: true });
+        });
+      }
+    });
+
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
