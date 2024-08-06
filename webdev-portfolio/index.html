@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>포트폴리오 메인</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
   <!-- aos css -->
@@ -19,9 +20,9 @@
         <div class="head">
           <nav>
             <ul>
-              <li><a href="#about-area" data-scroll>about me</a></li>
-              <li><a href="#skills" data-scroll>skill</a></li>
-              <li><a href="#project" data-scroll>project</a></li>
+              <li><a href="#about-area" data-scroll>ABOUT ME</a></li>
+              <li><a href="#skills" data-scroll>SKILL</a></li>
+              <li><a href="#project" data-scroll>PROJECT</a></li>
             </ul>
           </nav>
           <h1>김태준</h1>
@@ -102,8 +103,7 @@
         <div class="project-title">
           <h1 data-aos="fade-in">PROJECT</h1>
         </div>
-        <div class="pj-box pj-box1" data-aos="fade-in"
-        data-aos-duration="1500">
+        <div class="pj-box pj-box1" data-aos="fade-in" data-aos-duration="1500">
           <div>
             <div class="pj-img">
               <img src="./img/jobhunter-main2.png">
@@ -156,8 +156,7 @@
           <p>X</p>
         </div>
 
-        <div class="pj-box pj-box2" data-aos="fade-in"
-        data-aos-duration="1500">
+        <div class="pj-box pj-box2" data-aos="fade-in" data-aos-duration="1500">
           <div>
             <div class="pj-img">
               <img src="./img/goodjob-main2.png">
@@ -189,7 +188,7 @@
               <tr>
                 <th>소감</th>
                 <td>이번 프로젝트를 통해 마이크로서비스 아키텍쳐의 실제 구현을 경험해보았습니다. 서버를 두개 나누어 개발함으로써 각 서비스의 독립성과 확장성을 높일 수 있었지만 동시에 데이터 일관성
-                  유지와 서비스간 통신관리의 복잡성도 체감했습니다. REST API를 설계하고 구현하는 과정에서 효울적인 리소스 관리와 버전 관리의 중요성을 배웠습니다.</td>
+                  유지와 서비스간 통신관리의 복잡성도 체감했습니다. REST API를 설계하고 구현하는 과정에서 효율적인 리소스 관리와 버전 관리의 중요성을 배웠습니다.</td>
               </tr>
               <tr>
                 <th>깃허브 주소</th>
@@ -202,6 +201,50 @@
 
         <div id="pj-box2-detail">
           <p>XXX</p>
+        </div>
+
+        <div class="pj-box pj-box3" data-aos="fade-in" data-aos-duration="1500">
+          <div>
+            <div class="pj-img">
+              <img src="./img/brand_intro2.jpg">
+            </div>
+            <div class="pj-skill">
+              <h3>기술 스택</h3>
+              <p>JavaScript, HTML, CSS, indesign</p>
+            </div>
+          </div>
+          <div class="pj-info">
+            <table>
+              <tr>
+                <th>웹사이트 브랜딩</th>
+                <td>여행일기</td>
+              </tr>
+              <tr>
+                <th>Web Site</th>
+                <td>
+                  <a href="https://asxowns.github.io/travel_diary/" target="_blank">asxowns.github.io/travel_diary/</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Mobile Site</th>
+                <td>
+                  <a href="https://url.kr/qsat7j" target="_blank">url.kr/qsat7j</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Web Guide</th>
+                <td>
+                  <a href="./bibx_guide.html" target="_blank">BI&BX Guide</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Mobile Guide</th>
+                <td>
+                  <a href="mobile_guide.html" target="_blank">Mobile Guide</a>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
 
       </div>
@@ -221,57 +264,6 @@
     });
   </script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // 첫번째 프로젝트
-      const element = document.querySelector(".pj-box1");
-      const detail = document.getElementById("pj-box1-detail");
-      if (element && detail) {
-        element.addEventListener('click', () => {
-          detail.style.display = "block";
-          requestAnimationFrame(() => {
-            detail.style.opacity = 1;
-          });
-        });
-      }
-
-      // 첫번째 프로젝트 디테일 닫기
-      const close = document.querySelector("#pj-box1-detail p");
-      if (close && detail) {
-        close.addEventListener('click', () => {
-          detail.style.opacity = 0;
-          detail.addEventListener('transitionend', () => {
-            detail.style.display = "none";
-          }, { once: true });
-        });
-      }
-
-      // 두번째 프로젝트
-      const element2 = document.querySelector(".pj-box2");
-      const detail2 = document.getElementById("pj-box2-detail");
-      if (element2 && detail2) {
-        element2.addEventListener('click', () => {
-          detail2.style.display = "block";
-          requestAnimationFrame(() => {
-            detail2.style.opacity = 1;
-          });
-        });
-      }
-
-      // 두번째 프로젝트 디테일 닫기
-      const close2 = document.querySelector("#pj-box2-detail p");
-      if (close2 && detail2) {
-        close2.addEventListener('click', () => {
-          detail2.style.opacity = 0;
-          detail2.addEventListener('transitionend', () => {
-            detail2.style.display = "none";
-          }, { once: true });
-        });
-      }
-    });
-
-  </script>
   <script src="./js/main.js"></script>
 </body>
 
